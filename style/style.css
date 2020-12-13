@@ -1,0 +1,36 @@
+*{box-sizing:border-box}
+@keyframes e1 {
+    90% { transform: none; }   
+    95% { transform: scaleY(0.1); }}
+@keyframes e2 {
+   90% { transform: none; }
+   95% { transform: scaleY(0.1); }}
+.bobody {
+    display: flex;
+    height: 300px;
+    width: 300px;
+    border-radius: 150px;
+    background-color: rgb(255, 208, 0);
+    margin-left: 500px;
+    margin-top: 300px;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.eye1 {
+    background-color: black;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;  
+    animation-name: e1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;  
+}
+.eye2 {
+    background-color: black;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    animation-name: e2;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
